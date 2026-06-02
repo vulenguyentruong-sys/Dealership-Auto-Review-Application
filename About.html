@@ -1,30 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>About Us</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Required CSS links -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dealership</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="/djangoapp">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="/about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="About.html" class="active">About Us</a>
+        <a href="Contact.html">Contact Us</a>
     </nav>
-    <div class="container mt-5">
-        <h1>About Us</h1>
-        <p>Welcome to our Dealership. We provide the best cars and reviews.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="/static/person1.jpg" alt="CEO" class="img-fluid rounded-circle">
-                <h3>John Doe</h3>
-                <p>CEO - john@dealership.com</p>
-            </div>
+
+    <h1>About Us</h1>
+
+    <p>
+        Welcome to our Django React dealership application. This project helps users
+        view car dealers, filter dealers by state, check dealer details, read reviews,
+        register, log in, and submit dealer reviews.
+    </p>
+
+    <div class="team">
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Johnson">
+            <h3>Michael Johnson</h3>
+            <p><strong>Role:</strong> Backend Developer</p>
+            <p><strong>Details:</strong> Develops Django APIs, authentication logic, dealer data services, and database features.</p>
+            <p><strong>Email:</strong> michael.johnson@example.com</p>
+        </div>
+
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams">
+            <h3>Sarah Williams</h3>
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p><strong>Details:</strong> Builds React components, page layouts, navigation menus, and responsive user interfaces.</p>
+            <p><strong>Email:</strong> sarah.williams@example.com</p>
+        </div>
+
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="David Brown">
+            <h3>David Brown</h3>
+            <p><strong>Role:</strong> Project Manager</p>
+            <p><strong>Details:</strong> Manages project planning, testing, documentation, deployment, and team coordination.</p>
+            <p><strong>Email:</strong> david.brown@example.com</p>
+        </div>
+
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Davis">
+            <h3>Emily Davis</h3>
+            <p><strong>Role:</strong> QA Tester</p>
+            <p><strong>Details:</strong> Tests login, registration, dealer filtering, review submission, and page navigation features.</p>
+            <p><strong>Email:</strong> emily.davis@example.com</p>
         </div>
     </div>
 </body>
